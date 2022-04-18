@@ -1,2 +1,3 @@
-# pydefis-proposals
-Answer proposals for code interview problems
+# Pydefis answer proposals
+
+Answer proposals for some Pydefis' code interview problems.
