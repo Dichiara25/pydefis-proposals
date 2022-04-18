@@ -1,3 +1,3 @@
-# Pydefis answer proposals
+# Pydefis answer proposals 🐍
 
-Answer proposals for some Pydefis' code interview problems.
+Python3-written answer proposals for Pydéfis code interview problems. 
