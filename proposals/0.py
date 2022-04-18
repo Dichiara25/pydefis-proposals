@@ -1,12 +1,4 @@
-#!/usr/bin/env python3
-
-from pickle import TRUE
-
-
-forbidden_values = [4, 16, 37, 58, 89, 145, 42, 20, 4]
-N = 1000
-
-def list_creation(number):
+def list_creation(number, N):
     i = 0
     values = []
     values.append(number)
@@ -27,6 +19,7 @@ def list_creation(number):
 def compare(values):
     i = 0
     occurence = False
+    forbidden_values = [4, 16, 37, 58, 89, 145, 42, 20, 4]
 
     for i in range(len(values)):
         j = 0
@@ -38,17 +31,16 @@ def compare(values):
 
     return 1 if occurence == True else 0
 
-def init():
+def main():
     i = 0
     count = 0
-    
+    N = 100
+
     for i in range(N):
-        values = list_creation(i)
+        values = list_creation(i, N)
         count += compare(values)
 
     print("Occurences : {}".format(count))
 
-init()
-
-    
-
+if __name__ == "__main__":
+    main()
